@@ -5,9 +5,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
+    flex-direction: column;
 
     .play {
         width: 160px;
@@ -19,4 +17,36 @@ main {
         transition: .3s;
         cursor: pointer;
     }
+
+    .volume {
+        margin-top: 10px;
+    }
+
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 150px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 3px;
+        background-image: #FFFFFF
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        cursor: ew-resize;
+        box-shadow: 0 0 2px 0 #555;
+
+    }
+
+    // input[type=range]::-webkit-slider-runnable-track {
+    //     -webkit-appearance: none;
+    //     box-shadow: none;
+    //     border: none;
+    //     background: transparent;
+    // }
+
 }

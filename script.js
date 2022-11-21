@@ -11,7 +11,8 @@ window.addEventListener('DOMContentLoaded', () => {
         background = document.querySelector('main'),
         logo = document.querySelectorAll('.header__logo'),
         tabs = document.querySelectorAll('.footer__tab'),
-        songsParent = document.querySelectorAll('.menu');
+        songsParent = document.querySelectorAll('.menu'),
+        sliderVolume = document.getElementById("slider1");
 
     let currentMelody = 'forest',
         isPlay = false;
@@ -98,6 +99,15 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
+
+
+
+    sliderVolume.addEventListener("input", sliderActions);
+
+    function sliderActions() {
+        let newVolume = sliderVolume.value;
+        audio.volume = newVolume / 100; // range 0 to 1 
+    }
 
 });
 
