@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         audio.play();
 
         isPlay = true;
-        playBtn.style.backgroundImage = "url(../svg/pause.svg)";
+        playBtn.style.backgroundImage = "url(svg/pause.svg)";
 
     }
 
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (!isPlay) {
             playAudio(currentMelody)
         } else {
-            playBtn.style.backgroundImage = "url(../svg/play.svg)";
+            playBtn.style.backgroundImage = "url(svg/play.svg)";
             isPlay = false;
             audio.pause();
         }
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             birdsBtns.forEach(item => item.classList.remove('active'));
             item.classList.add('active');
-            background.style.backgroundImage = `url(../img/${currentMelody}.jpg)`
+            background.style.backgroundImage = `url(img/${currentMelody}.jpg)`
             logo.forEach(item => item.classList.remove('active'));
         })
     })
@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
             currentMelody = (logo[0].classList.contains('show')) ? 'forest' : 'cycle';
             playAudio(currentMelody);
             birdsBtns.forEach(item => item.classList.remove('active'));
-            background.style.backgroundImage = `url(../img/${currentMelody}.jpg)`
+            background.style.backgroundImage = `url(img/${currentMelody}.jpg)`
         })
     })
 
@@ -73,13 +73,13 @@ window.addEventListener('DOMContentLoaded', () => {
             tabs.forEach(item => item.classList.remove('active'));
             tab.classList.add('active');
 
-            playBtn.style.backgroundImage = "url(../svg/play.svg)";
+            playBtn.style.backgroundImage = "url(svg/play.svg)";
             isPlay = false;
             audio.pause();
 
             if (tab.classList.contains('footer__tab-skull')) {
                 currentMelody = 'cycle';
-                background.style.backgroundImage = `url(../img/${currentMelody}.jpg)`
+                background.style.backgroundImage = `url(img/${currentMelody}.jpg)`
                 songsParent.forEach(item => item.classList.remove('show'));
                 songsParent[1].classList.add('show');
                 logo[0].classList.remove('show');
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 logo[1].classList.add('active');
             } else {
                 currentMelody = 'forest';
-                background.style.backgroundImage = `url(../img/${currentMelody}.jpg)`
+                background.style.backgroundImage = `url(img/${currentMelody}.jpg)`
                 songsParent.forEach(item => item.classList.remove('show'));
                 songsParent[0].classList.add('show');
                 logo[1].classList.remove('show');
