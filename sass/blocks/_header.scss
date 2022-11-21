@@ -1,0 +1,50 @@
+.header {
+    background: #000000;
+    height: 60px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__logo {
+        margin-top: 10px;
+        transition: all 400ms ease;
+
+        img {
+            height: 40px;
+        }
+
+        &:hover {
+            filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+        }
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+
+        &__item {
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 21px;
+            padding: 0 0 0 40px;
+            transition: all 400ms ease;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+            }
+
+        }
+    }
+
+    .active {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+}

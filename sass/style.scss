@@ -1,0 +1,39 @@
+* {
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1220px) {
+        max-width: 950px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 760px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 560px;
+        padding: 0 10px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 0 15px;
+    }
+}
+
+
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/footer';
+
+@import 'blocks/media';
