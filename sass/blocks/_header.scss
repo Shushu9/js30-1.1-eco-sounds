@@ -10,6 +10,7 @@
 
 
     &__logo {
+        display: none;
         margin-top: 10px;
         transition: all 400ms ease;
 
@@ -24,7 +25,7 @@
 
     .menu {
         list-style: none;
-        display: flex;
+        display: none;
 
         &__item {
             font-family: 'Roboto', sans-serif;
@@ -42,6 +43,10 @@
             }
 
         }
+    }
+
+    .show {
+        display: flex;
     }
 
     .active {

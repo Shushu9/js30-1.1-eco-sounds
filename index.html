@@ -16,16 +16,28 @@
 <body>
     <header class="header">
         <div class="container header__wrapper">
-            <a href="#" class="header__logo active">
+            <a href="#" class="header__logo active show">
                 <img src="svg/logo.svg" alt="bird-logo">
             </a>
+            <a href="#" class="header__logo">
+                <img src="svg/finn.png" alt="monster">
+            </a>
+
+            <!-- <li class="menu__item" data-item="cycle">Cycle</li> -->
             <nav>
-                <ul class="menu">
+                <ul class="menu show">
                     <li class="menu__item" data-item="solovey">Соловей</li>
                     <li class="menu__item" data-item="drozd">Дрозд</li>
                     <li class="menu__item" data-item="zarynka">Малиновка</li>
                     <li class="menu__item" data-item="javoronok">Жаворонок</li>
                     <li class="menu__item" data-item="slavka">Славка</li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu__item" data-item="bleed">Sugah</li>
+                    <li class="menu__item" data-item="fear">Fear</li>
+                    <li class="menu__item" data-item="crushed">Crushed</li>
+                    <li class="menu__item" data-item="now">Now</li>
+                    <li class="menu__item" data-item="before">Slip</li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +46,6 @@
     <main>
 
         <button class="play"></button>
-
     </main>
     <footer>
         <div class="container footer">
@@ -42,6 +53,18 @@
                 <div class="footer__year">© 2022</div>
                 <a class="footer__github" href="https://github.com/Shushu9">github</a>
             </div>
+
+            <ul class="footer__tabs">
+                <li class="footer__tab" data-tab="bird">
+                    <img src="svg/logo1.svg" alt="birds" class="footer__tab-icon">
+                </li>
+                <li class="footer__tab footer__tab-skull" data-tab="skull">
+                    <img src="svg/skull.png" alt="metal" class="footer__tab-icon">
+                </li>
+                <!-- <li class="main__tab">
+                    <img src="svg/logo.svg" alt="" class="main__tab-icon">
+                </li> -->
+            </ul>
             <a class="footer__rss" href="https://rs.school/js-stage0/">
                 <img src="svg/rss.svg" alt="rss">
             </a>

@@ -27,6 +27,50 @@ footer {
         }
     }
 
+
+    .footer {
+        &__tabs {
+            display: flex;
+            padding-left: 0;
+            align-items: center;
+
+        }
+
+        &__tab {
+            transition: all 400ms ease;
+            cursor: pointer;
+            list-style: none;
+
+
+
+            &-icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            &:hover {
+                filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+            }
+
+
+            &-skull {
+
+                .footer__tab-icon {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                &:hover {
+                    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+                }
+            }
+        }
+    }
+
+    .active {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+
     &__rss {
         transition: all 400ms ease;
 

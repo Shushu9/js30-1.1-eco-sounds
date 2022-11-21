@@ -37,10 +37,19 @@
     }
 
     .footer {
+        &__info {
+            font-size: 12px;
+
+        }
+
+        &__github {
+            padding-left: 5px;
+        }
+
         &__rss {
 
             img {
-                max-height: 40px;
+                max-height: 30px;
             }
 
         }
@@ -50,6 +59,12 @@
 @media (max-width: 509px) {
     .header {
         height: 70px;
+
+        &__logo {
+            img {
+                height: 30px;
+            }
+        }
     }
 
     main {
@@ -57,12 +72,12 @@
     }
 }
 
-@media (max-width: 331px) {
-    .header {
-        height: 90px;
-    }
+// @media (max-width: 331px) {
+//     .header {
+//         height: 90px;
+//     }
 
-    main {
-        height: calc(100vh - 150px);
-    }
-}
+//     main {
+//         height: calc(100vh - 150px);
+//     }
+// }
